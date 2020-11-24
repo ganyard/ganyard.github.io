@@ -1,0 +1,234 @@
+
+html, body {
+	background-color: black;
+	overflow: auto;
+}
+
+body, #static {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-2;
+}
+
+.school{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+	margin-top: -10px;
+	text-align: left;
+	float: left;
+}
+
+.info{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+	margin-top: -10px;
+	text-align: right;
+	float: right;
+}
+
+.infoBox{
+	background-color: rgba(0, 0, 0, 0.36);
+	text-align: center;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bold;
+	color: #75b955;
+	width: 800px;
+	height: 30px;
+  border: 5px solid #75b955;
+	padding: 50px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+.paraBox{
+	background-color: rgba(0, 0, 0, 0.36);
+	position: relative;
+	text-align: center;
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bold;
+	color: #75b955;
+	width: 800px;
+	height: 425px;
+  border: 5px solid #75b955;
+	padding-top: 0px;
+  padding: 50px;
+	margin-top: -5px;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+button{
+	float: center;
+	vertical-align: top;
+	margin-top: -40px;
+	margin-left: 10px;
+	display: inline-flex;
+	display: inline-block;
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: 4px;
+	font-size: 15px;
+	width: 175px;
+	height: 50px;
+	background-color: #75b955;
+	border: none;
+	border-radius: 3px;
+	-webkit-tap-highlight-color: transparent;
+	transition: all .5s ease-out;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.welcome{
+	margin-top: 150px;
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-decoration: overline underline;
+}
+
+button:hover{
+	background: none;
+	transition: .5s;
+}
+
+
+button:focus{
+	text-decoration: underline;
+	outline: none;
+	background:none;
+	color: #6ae133;
+	transition: 1s;
+}
+
+.content {
+	margin-top: 15px;
+	text-align: left;
+  color: #75b955;
+  display: none;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.contact{
+	color:#75b955;
+	font-weight: bolder;
+}
+
+#static {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:-1;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.extrasScheme {
+	background-color: #31362f;
+	font-family: monospace;
+	overflow: hidden;
+	margin: auto;
+}
+
+.titleText {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 5x !important;
+	margin: auto;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 30px;
+	color: white;
+	width: 800px;
+	background-color: rgba(0, 0, 0, 0.36);
+	font-family: monospace;
+	height: 90px;
+	padding: 10px;
+}
+
+.textBox {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.36);
+  height: 70vh;
+  width: 800px;
+  padding: 10px;
+	overflow-y: scroll;
+}
+
+#scroller::-webkit-scrollbar {
+	background: none;
+	width: 5px;
+}
+
+#scroller::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #778074;
+}
+
+.textContent {
+  color: white;
+	font-size: 15px;
+	width: 795px;
+	word-wrap: break-word;
+}
+
+.center {
+	text-align: center;
+	margin-top: 10px;
+}
+
+a.backButton{
+  color: navy;
+	text-decoration: none !important;
+	text-align: center;
+	margin-top: 20px;
+}
+
+h3 {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+#page2 {
+	display: none;
+}
+
+.extraButton {
+	background-color: transparent !important;
+	margin-top: -10px !important;
+	cursor: pointer !important;
+}
+
+.extraButton:focus {
+	color: green;
+}
+
+.extra {
+	background-color: #31362f !important; 
+}
